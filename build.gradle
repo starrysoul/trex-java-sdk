@@ -3,7 +3,7 @@ plugins {
 	id 'com.github.sherter.google-java-format' version '0.8'
 	id 'signing'
 	id 'maven-publish'
-    id 'io.codearte.nexus-staging' version '0.21.2'
+//    id 'io.codearte.nexus-staging' version '0.21.2'
 }
 
 group 'com.cisco.trex'
@@ -168,7 +168,9 @@ task jarWithDependencies(type: Jar) {
     with jar
 }
 
+/*
 nexusStaging {
 	numberOfRetries = 40
 	delayBetweenRetriesInMillis = 5000
 }
+*/
